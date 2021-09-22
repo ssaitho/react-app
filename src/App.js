@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from "./stories/components/Button";
 
 function App() {
+  const onClickButton = () => alert("押しちゃったね");
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +19,12 @@ function App() {
         >
           Learn React
         </a>
+        <Button
+          size="large" 
+          backgroundColor="#61dafb"
+          label="購入はこちらから"
+          onClick={onClickButton}
+        />
       </header>
     </div>
   );
